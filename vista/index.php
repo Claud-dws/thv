@@ -11,7 +11,7 @@ if(!isset($_SESSION['S_IDUSUARIO'])){
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fundación|Trato Hecho Vecino:</title>
+  
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -59,11 +59,16 @@ if(!isset($_SESSION['S_IDUSUARIO'])){
   <header class="main-header">
     <!-- Logo -->
     <a  href="index.php" class="logo">
+    
       <!-- mini logo for sfidebar mini 50x50 pixels -->
+      
       <span class="logo-mini"><b>F</b>THV</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>FUNDACIÓN</b>THC</span>
+     
+      <span class="logo-lg"><b>FUNDACIÓN</b>THC  </span>
+      
     </a>
+    
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
       <!-- Sidebar toggle button-->
@@ -235,7 +240,7 @@ if(!isset($_SESSION['S_IDUSUARIO'])){
           </li>
 
               <div class="pull-right">
-                  <a href="../controlador/usuario/controlador_cerrar_session.php" class="btn btn-default btn-flat">Cerrar Sesión</a>
+                  <a href="../controlador/usuario/controlador_cerrar_session.php" class="btn btn-default btn-flat" >Cerrar Sesión</a>
                 </div>
 
                 <div class="pull-right">
@@ -280,27 +285,73 @@ if(!isset($_SESSION['S_IDUSUARIO'])){
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
+      
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MENÚ DE ADMINISTRADOR</li>
+       
+        <li class="treeview">
+          <a>
+            <i class="fa fa-pencil-square-o"></i> <span>Registros</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href = # onclick="cargar_contenido('contenido_principal','usuario/vista_usuario_listar.php')"><i class="fa fa-address-book-o"></i> Usuarios</a></li>
+            <li><a href = #><i class="fa fa-file-text-o"></i> Hospederias</a></li>
+            <li><a href = #><i class="fa fa-file-text-o"></i> Requerimientos</a></li>
+            <li><a href = #><i class="fa fa-file-text-o"></i> Materiales</a></li>
+            <li><a href = #><i class="fa fa-file-text-o"></i> Herramientas</a></li>
+          </ul>
+        </li>
+
+
+        <li class="treeview">
+          <a>
+            <i class="fa fa-usd"></i> <span>Presupuesto</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href = # onclick="cargar_contenido('contenido_principal','usuario/vista_usuario_mdo.php')"><i class="fa fa-file-text-o"></i> Mano de obra</a></li>
+            <li><a href = #><i class="fa fa-file-text-o"></i> Resumen de presupuesto</a></li>
+          </ul>
+        </li>
+
+
+
         <li class="active treeview">
-          <a onclick="cargar_contenido('contenido_principal','usuario/vista_usuario_listar.php')">
-            <i class="fa fa-users"></i> <span>Usuarios</span>
+        <a href = #>
+            <i class="fa fa-file-text-o"></i> <span>Bitacoras</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
         </li>
         <li>
-         
-          <a onclick="cargar_contenido('contenido_principal','usuario/vista_usuario_calendario.php')">
-            <i class="fa fa-calendar"></i> <span>Calendario</span>
-           
+
+        <li class="active treeview">
+        <a href = #>
+            <i class="fa fa-file-text-o"></i> <span>Encuentas de opinión</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-red">3</small>
-              <small class="label pull-right bg-blue">17</small>
+              <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
         </li>
+        <li>
+
+        <li class="active treeview">
+        <a href = #>
+            <i class="fa fa-file-text-o"></i> <span>Observaciones</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        </li>
+        <li>
+          
+        <!--onclick="cargar_contenido('contenido_principal','usuario/vista_usuario_calendario.php')-->
         <!--
         <li class="treeview">
           <a href="#">
@@ -468,8 +519,6 @@ if(!isset($_SESSION['S_IDUSUARIO'])){
         <div class="col-md-12">
           <div class="box box-warning box-solid">
 
-            
-
             <div class="box-header with-border">
               <h3 class="box-title">BIENVENIDO AL CONTENIDO PRINCIPAL</h3>
 
@@ -481,14 +530,18 @@ if(!isset($_SESSION['S_IDUSUARIO'])){
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              CONTENIDO PRINCIPAL
+              En construcción
             </div>
             <!-- /.box-body -->
+            
           </div>
+          
           <!-- /.box -->
+          
         </div>
     </div>
   </div>
+  
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
